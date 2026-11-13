@@ -1,0 +1,22 @@
+.farsiflow-rtl pre,
+.farsiflow-rtl code,
+.farsiflow-rtl kbd,
+.farsiflow-rtl samp,
+.farsiflow-rtl var,
+.farsiflow-rtl .monaco-editor,
+.farsiflow-rtl .CodeMirror,
+.farsiflow-rtl .cm-editor,
+.farsiflow-rtl .xterm,
+.farsiflow-rtl [data-language] {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
+.farsiflow-rtl :not(pre):not(code):not(kbd):not(samp):not(var):not(input):not(textarea):not([contenteditable="true"]):not(.monaco-editor):not(.CodeMirror):not(.cm-editor):not(.xterm) {
+  font-feature-settings: "kern";
+}
+body.farsiflow-rtl [dir="ltr"] {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
